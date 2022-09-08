@@ -1,44 +1,45 @@
-# Deployment
+# Deployment of latent space explorer
 
-Files and instruction to run the [Latent Space Explorer](lse.neanias.eu)
+This repository contains files and instructions to run the [Latent Space Explorer](lse.neanias.eu)
 
 # Requirements
-The service was built to be productionale quickly, so it was built by leveraging on existing services of the [NEANIAS](https://docs.neanias.eu/en/latest/) H2020 funded project.
-
-It limits the possibility to isolate the original code from the services, that are needed in order to let the sorftware works.
-
-- A Nextcloud server instance
-- A Kubernetes cluster
-- A [AAI](https://docs.neanias.eu/projects/aai-service/en/latest/) service using OpenID protocol
+- Nextcloud server instance
+  - Deploy your own -> [NextCloud](https://nextcloud.com/)
+  - Use already available service -> 
+- Kubernetes cluster
+- [AAI](https://docs.neanias.eu/projects/aai-service/en/latest/) service using OpenID protocol
+  - There are some free online service providing it
 - Optional
   - logging and monitor service using logstash stack
 
+---
+**_NOTE:_** <br/>
+LSE was developed in a rich cloud ecosystem that shares core services ([NEANIAS](https://docs.neanias.eu/en/latest/)), therefore implementing those it's up to developers.
 ## Getting started
-Create a secret file with right credentials to access nextcloud and AAI
-
-Set your kubecontext (which kubernetes cluster you want to deploy the application)
-
-Deploy all the files in the k8s folder by using
+- Configure [Client](docs/config_client.md)
+- Configure [Server](docs/config_server.md)
+- Configure [AAI](docs/config_AAI.md)
+- Configure [Nextcloud](docs/config_Nextcloud.md)
+- Configure [minikube](docs/config_minikube.md)
+- Deploy all the files in the k8s folder by using
 
 ```
-kubectl apply -f k8s/*
+kubectl apply -f k8s/local --recursive
 ```
-
-(An helm chart will be provided)
 
 If you use that software please cite:
 ```
 SoftwareX paper...
 ```
-
 ## Support
-Contact giuseppe.vizzari@gmail.com
+- giuseppe.vizzari@unimib.it
+- thomas.cecconello@unimib.it
 
 ## Roadmap
-Isolate services from dependencies make those plug and play, abilitating isolation in developement.
+
 
 ## Contributing
-In order to contribute to the project...
+
 
 ## License
 Apache 2.0

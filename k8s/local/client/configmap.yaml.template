@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: client-config
+  labels:
+    k8s-app: client
+data:
+  .env.local: |-
+    NEXT_PUBLIC_SERVER_URL=http://$SERVER_SERVICE_HOST:$SERVER_SERVICE_PORT
+    NEXT_PUBLIC_NEXTCLOUD_URL=<nextcloud url>
+
+    NEXTAUTH_URL=<>
+    NEXTAUTH_SECRET=<>
+    NEXTAUTH_CLIENT_ID=<>
+    NEXTAUTH_CLIENT_SECRET=<>
+    NEXTAUTH_WELL_KNOW_URL=<>
+    NEXTAUTH_AUTHORIZATION_URL=<>
+    NEXTAUTH_ACCESS_TOKEN_URL=<>
+    NEXTAUTH_PROFILE_URL=<>
+    NEXTAUTH_DEBUG=true
+    NEXTAUTH_SECURE_COOKIES=false

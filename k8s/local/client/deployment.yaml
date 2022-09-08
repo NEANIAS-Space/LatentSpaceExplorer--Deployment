@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client
+  template:
+    metadata:
+      labels:
+        app: client
+    spec:
+      containers:
+        - name: client
+          image: gitlab.neanias.eu:5050/s3-service/latent-space-explorer/client:v1.1.2-production
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
