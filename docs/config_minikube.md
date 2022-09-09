@@ -1,4 +1,6 @@
 Install [minikube](https://minikube.sigs.k8s.io/docs/) (LSE was tested using version v1.22.0)
+
+Perform following steps:
 - minikube start
 - minikube addons enable ingress
 - minikube tunnel
