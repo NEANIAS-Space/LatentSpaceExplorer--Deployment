@@ -10,3 +10,15 @@ Follow instrunctions on [NextCloud](https://nextcloud.com/) website
 - Generate app password:
   - settings -> security -> create new app password
 - Upload some [example experiments](../lse-demo.zip) under demo-lse folder
+
+Documents tree needs to be as follow:
+```
+demo-lse
+└── demo-mnist-autoencoder (or experiment name)
+   └── clusters
+   └── images
+   └── reductions
+   └── embeddings.json
+   └── label.json
+   └── metadata.json
+```

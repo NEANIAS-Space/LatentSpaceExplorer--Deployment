@@ -1,4 +1,4 @@
-# Deployment of latent space explorer
+# Latent Space Explorer deployment
 
 This repository contains files and instructions to run Latent Space Explorer ([LSE](https://lse.neanias.eu))
 
