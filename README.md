@@ -36,11 +36,6 @@ SoftwareX paper...
 - giuseppe.vizzari@unimib.it
 - thomas.cecconello@unimib.it
 
-## Roadmap
-
-
-## Contributing
-
 ## License
 Apache 2.0
 
