@@ -14,9 +14,22 @@ spec:
     spec:
       containers:
         - name: celery
-          image: celery
+          image: gitlab.neanias.eu:5050/s3-service/latent-space-explorer/server/celery:v1.1.4-production
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
+          volumeMounts:
+            - mountPath: .env
+              name: server-config
+              readOnly: true
+              subPath: .env
+      volumes:
+        - configMap:
+            defaultMode: 420
+            items:
+              - key: .env
+                path: .env
+            name: server-config
+          name: server-config
       imagePullSecrets:
         - name: regcred
