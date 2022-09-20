@@ -1,4 +1,4 @@
-Overall architecture could be seen down below
+# Overall architecture
 
 ```mermaid
 flowchart LR;
@@ -14,7 +14,3 @@ flowchart LR;
 	    Monitoring([Monitoring])-.->Server
 	end  
 ```
-
-Desrizione ad alto livello
-
-Link a singoli componenti
