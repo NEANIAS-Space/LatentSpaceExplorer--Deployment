@@ -14,7 +14,20 @@ spec:
     spec:
       containers:
         - name: client
-          image: gitlab.neanias.eu:5050/s3-service/latent-space-explorer/client:v1.1.2-production
+          image: gitlab.neanias.eu:5050/s3-service/latent-space-explorer/client:v1.1.2-capsule
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
+          volumeMounts:
+            - mountPath: /app/.env.local
+              name: client-config
+              readOnly: true
+              subPath: .env.local
+      volumes:
+        - configMap:
+            defaultMode: 420
+            items:
+              - key: .env.local
+                path: .env.local
+            name: client-config
+          name: client-config
