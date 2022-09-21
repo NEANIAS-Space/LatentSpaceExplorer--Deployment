@@ -25,7 +25,7 @@ LSE was developed in a rich cloud ecosystem that shares core services ([NEANIAS]
 - Configure [minikube](docs/config_minikube.md)
 - Deploy all the files in the k8s folder by using
 - ```
-  kubectl apply -f k8s/local --recursive
+  kubectl apply -f k8s/minimal --recursive
   ```
 
 If you use that software please cite:
