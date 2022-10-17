@@ -4,7 +4,7 @@ Perform following steps:
 - minikube start
 - minikube addons enable ingress
 - minikube tunnel
-  ![tunnel](../media/tunnel.png)
+- ![tunnel](../media/tunnel.png)
 
 Map minikube tunneling ip address to http://lse.local
 ```text

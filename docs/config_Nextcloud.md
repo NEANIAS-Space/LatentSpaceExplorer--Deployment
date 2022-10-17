@@ -7,8 +7,8 @@ You could deploy your [own](https://nextcloud.com/) or take advantage of already
 - Login
 - Generate app password:
   - settings -> security -> create new app password
-  - ![](../media/nextcloud_config.png)
-  - Remember those credentials in order to fulfill server and client configmap
+  - ![nc_configs](../media/nextcloud_config.png)
+  - Remember those credentials in order to fulfill server configmap
 - Upload some [example experiments](../lse-demo.zip) under demo-lse folder
 
 Documents tree needs to be as follow:
