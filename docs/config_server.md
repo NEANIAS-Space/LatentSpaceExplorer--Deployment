@@ -8,5 +8,6 @@
       - If b2drop: https://b2drop.eudat.eu/
     - NEXCLOUD_USER
     - NEXCLOUD_PASSWORD
-    - Taken from: ![](../media/nextcloud_config.png)
+    - Taken from:
+    - ![nc_config](../media/nextcloud_config.png)
 - Duplicate file configmap.yaml.template and rename it configmap.yaml
