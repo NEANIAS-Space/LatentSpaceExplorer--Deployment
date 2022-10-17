@@ -38,4 +38,3 @@ SoftwareX paper...
 
 ## License
 Apache 2.0
-
