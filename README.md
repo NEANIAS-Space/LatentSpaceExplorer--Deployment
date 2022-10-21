@@ -40,6 +40,13 @@ LSE was developed in a rich cloud ecosystem that shares core services ([NEANIAS]
   kubectl apply -f k8s/minimal --recursive
   ```
 
+### Workaround
+In some recent minikube version it's possibile that image pulling goes in timeout status. A workaround is to force pulling via:
+```
+minikube ssh docker pull <image-name>
+```
+
+
 If you use that software please cite:
 ```
 SoftwareX paper...

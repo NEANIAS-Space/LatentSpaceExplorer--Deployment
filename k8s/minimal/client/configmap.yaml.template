@@ -6,18 +6,24 @@ metadata:
     k8s-app: client
 data:
   .env.local: |-
-    NEXT_PUBLIC_SERVER_URL=http://$SERVER_SERVICE_HOST:$SERVER_SERVICE_PORT
-    NEXT_PUBLIC_NEXTCLOUD_URL=<>
+    NEXT_PUBLIC_NEXTAUTH_AUTH0_DOMAIN=#Your auth0 app link like: dev-larxpnaf.us.auth0.com
+    NEXT_PUBLIC_NEXTAUTH_AUTH0_CLIENT_ID=#Your auth0 app client ID like BnVnRC8YLAGLlu0v0LvTxXcdVwH0P4pqroot@client-d9d855ffb-wjszd
+    NEXT_PUBLIC_NEXTAUTH_AUTH0_CLIENT_SECRET=##Your auth0 app client Secret like ykUKolNbJo4KPKvVaA2QuJ0TJ-2oEk7rMhjA79zB-Em3N1o1ubE4TwV1fkftEbxf
+
+    # Uncomment this if you use NextCloud b2drop
+    #NEXT_PUBLIC_NEXTCLOUD_URL=https://b2drop.eudat.eu
+    # Uncomment and fill if you use other NextCloud provider
+    #NEXT_PUBLIC_NEXTCLOUD_URL=
 
     NEXT_PUBLIC_SERVER_URL=http://$SERVER_SERVICE_HOST:$SERVER_SERVICE_PORT
-    NEXT_PUBLIC_NEXTCLOUD_URL=https://b2drop.eudat.eu
+    
+
+    NEXT_PUBLIC_NEXTAUTH_NEANIAS = false
+    NEXT_PUBLIC_NEXTAUTH_AUTH0 = true
 
     NEXTAUTH_URL=http://lse.local
     NEXTAUTH_SECRET=bPeShVmYq3t6w9z$C&F)J@NcRfTjWnZr
+    
 
-    NEXTAUTH_NEANIAS = false
+    
 
-    NEXTAUTH_AUTH0 = true
-    NEXTAUTH_AUTH0_DOMAIN=<>
-    NEXTAUTH_AUTH0_CLIENT_SECRET=<>
-    NEXTAUTH_AUTH0_CLIENT_ID=<>

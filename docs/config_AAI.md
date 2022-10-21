@@ -9,6 +9,7 @@ Example free provider could be setted up using [auth0](https://auth0.com/).
 - Create application
 	- Single page web application
 	- Add ``http://lse.local/api/auth/callback/auth0`` in ``allowed callback url`` field
+	![auth](../media/auth0_allowed_callback_URLs.png)
 	- Remember the information showed in the app detail to next fulfill client configmap.yaml with correct credentials
     	- ![auth](../media/auth0_credentials.png)
 		- NEXTAUTH_AUTH0_DOMAIN=\<domain>
