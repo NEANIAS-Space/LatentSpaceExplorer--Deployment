@@ -2,7 +2,7 @@
 ## Requirements
 - Configured [Nextcloud](config_Nextcloud.md)
 ## Steps
-- Open [configmap.yaml.template](../k8s/local/server/configmap.yaml.template)
+- Open [configmap.yaml.template](../src/k8s/local/server/configmap.yaml.template)
 - Fill empty fields
     - NEXCLOUD_HOST
       - If b2drop: https://b2drop.eudat.eu/

@@ -3,7 +3,7 @@
 - Configured [AAI](config_AAI.md)
 - Configured [Nextcloud](config_Nextcloud.md)
 ## Steps
-- Open [configmap.yaml.template](../k8s/local/client/configmap.yaml.template)
+- Open [configmap.yaml.template](../src/k8s/local/client/configmap.yaml.template)
 - Fill empty fields
   - NEXT_PUBLIC_NEXTCLOUD_URL
     - If b2drop: https://b2drop.eudat.eu/
